@@ -52,6 +52,12 @@ body::-webkit-scrollbar {
   position: absolute;
 }
 
+.bunga-bawah {
+  bottom: 0;
+  position: absolute;
+  z-index: 1055;
+}
+
 .loading-page {
   position: fixed;
   inset: 0 !important;
@@ -59,6 +65,15 @@ body::-webkit-scrollbar {
   height: 100%;
   background-color: #111111;
   z-index: 1056 !important;
+}
+
+.bunga-bawah {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1 !important;
 }
 
 .card-body {
