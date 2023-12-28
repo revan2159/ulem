@@ -49,6 +49,7 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   width: 52%;
+  position: absolute;
 }
 
 .loading-page {
