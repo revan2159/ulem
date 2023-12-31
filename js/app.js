@@ -239,46 +239,46 @@ const util = (() => {
     };
 })();
 
-const progress = (() => {
+// const progress = (() => {
 
-    const assets = document.querySelectorAll('img');
-    const info = document.getElementById('progress-info');
-    const bar = document.getElementById('bar');
+//     const assets = document.querySelectorAll('img');
+//     const info = document.getElementById('progress-info');
+//     const bar = document.getElementById('bar');
 
-    let total = assets.length;
-    let loaded = 0;
+//     let total = assets.length;
+//     let loaded = 0;
 
-    // const progress = () => {
-    //     loaded += 1;
+//     const progress = () => {
+//         loaded += 1;
 
-    //     bar.style.width = Math.min((loaded / total) * 100, 100).toString() + "%";
-    //     info.innerText = `Loading assets (${loaded}/${total}) [${parseInt(bar.style.width).toFixed(0)}%]`;
+//         bar.style.width = Math.min((loaded / total) * 100, 100).toString() + "%";
+//         info.innerText = `Loading assets (${loaded}/${total}) [${parseInt(bar.style.width).toFixed(0)}%]`;
 
-    //     if (loaded == total) {
+//         if (loaded == total) {
 
-    //         if ('scrollRestoration' in history) {
-    //             history.scrollRestoration = 'manual';
-    //         }
+//             if ('scrollRestoration' in history) {
+//                 history.scrollRestoration = 'manual';
+//             }
 
-    //         document.body.scrollTop = 0;
-    //         document.documentElement.scrollTop = 0;
-    //         window.scrollTo(0, 0);
+//             document.body.scrollTop = 0;
+//             document.documentElement.scrollTop = 0;
+//             window.scrollTo(0, 0);
 
-    //         util.tamu();
-    //         util.opacity('loading');
-    //     }
-    // };
+//             util.tamu();
+//             util.opacity('loading');
+//         }
+//     };
 
-    assets.forEach((asset) => {
-        if (asset.complete && (asset.naturalWidth !== 0)) {
-            progress();
-        } else {
-            asset.addEventListener('load', () => {
-                progress();
-            });
-        }
-    });
-})();
+//     assets.forEach((asset) => {
+//         if (asset.complete && (asset.naturalWidth !== 0)) {
+//             progress();
+//         } else {
+//             asset.addEventListener('load', () => {
+//                 progress();
+//             });
+//         }
+//     });
+// })();
 
 const audio = (() => {
     let audio = null;
